@@ -10,9 +10,6 @@ A testbed repo for testdriving deno, messing with docker and writing plain sql q
 - deno-postgres https://deno-postgres.com/#/
 
 ### Containerization
-- Docker
-
-
-## Running
-- `docker compose build`
-- `docker compose up`
+- `docker compose build` build the deno image
+- `docker compose up` run deno and postgres services
+- `docker compose down --volumes` get a clean slate, for example when you change the db credentials or something.

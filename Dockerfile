@@ -4,6 +4,6 @@ WORKDIR /denotes
 
 COPY . ./
 
-RUN deno cache mod.ts
+RUN deno cache server.ts
 
-CMD ["run", "--allow-env", "--allow-net", "mod.ts"]
+CMD ["run", "--allow-env", "--allow-read", "--allow-net", "server.ts"]
