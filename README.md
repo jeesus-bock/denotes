@@ -1,15 +1,17 @@
 # denotes - testing deno and stuff
 
-A testbed repo for testdriving deno, messing with docker and writing plain sql queries without fancy bells.
-### The Javascript engine:
+A testbed repo for testdriving deno, messing with docker and writing plain sql queries without fancy bells and whistles.
+
+### The javascript engine:
 - deno https://deno.land/
 
 ### Dependencies:
-
+The dependencies are imported in deps.ts and are automatically fetched on build.
 - denorest https://denorest.deno.dev/
 - deno-postgres https://deno-postgres.com/#/
 
 ### Containerization
-- `docker compose build` build the deno image
-- `docker compose up` run deno and postgres services
-- `docker compose down --volumes` get a clean slate, for example when you change the db credentials or something.
+The main way to run the app is by docker compose.
+- `docker compose build` Build the deno image.
+- `docker compose up` Run deno and postgres services. Point browser to http://localhost:8080 to see the result.
+- `docker compose down --volumes` Get a clean slate, for example when you change the db credentials or something.
