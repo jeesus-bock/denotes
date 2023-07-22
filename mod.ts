@@ -1,5 +1,5 @@
 import { Req, Res, Router, WebApp } from 'https://deno.land/x/denorest@v4.2/mod.ts';
-
+import './database.ts';
 const app = new WebApp();
 const router = new Router();
 

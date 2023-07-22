@@ -11,3 +11,8 @@ A testbed repo for testdriving deno, messing with docker and writing plain sql q
 
 ### Containerization
 - Docker
+
+
+## Running
+- `docker compose build`
+- `docker compose up`

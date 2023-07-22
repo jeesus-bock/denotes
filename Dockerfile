@@ -6,4 +6,4 @@ COPY . ./
 
 RUN deno cache mod.ts
 
-CMD ["run", "--allow-net", "mod.ts"]
+CMD ["run", "--allow-env", "--allow-net", "mod.ts"]
